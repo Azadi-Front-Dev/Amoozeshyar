@@ -1,6 +1,7 @@
 import "./App.css";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
+import Verify from "./Pages/Verify";
 import Notfound from "./Pages/Notfound";
 import { useRoutes } from "react-router-dom";
 import ForgotPassword from "./Pages/ForgotPassword";
@@ -9,6 +10,7 @@ const routes = [
   { path: "/", element: <Home /> },
   { path: "*", element: <Notfound /> },
   { path: "/Login", element: <Login /> },
+  { path: "/Verify", element: <Verify /> },
   { path: "/ForgotPassword", element: <ForgotPassword /> },
 ];
 
