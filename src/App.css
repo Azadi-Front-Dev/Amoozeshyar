@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Vazir";
+  src: url("/Fonts/Vazir.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@utility flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@utility flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@theme {
+  /* Coustom Fonts  */
+  --font-Vazir: "Vazir";
+  --font-Estedad-Light: "Estedad-Light";
+
+  /* Coustom border  */
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+
+  /* Coustom Paddings  */
+  /* Coustom colors  */
+  --color-myblue-100: rgb(248 250 252);
+  --color-myblue-200: rgb(214 223 232);
+  --color-myblue-300: rgb(8 49 206 / 80%);
+  --color-myblue-600: rgb(0 113 145);
+  --color-mygray-100: #e5e7eb;
+  --color-mygray-200: rgb(248 250 252);
+  /* Coustom Media  */
+  --breakpoint-mobile: 490px;
+  /* Coustom Shadow  */
+    --shadow-myshadow-100: 0px 0px 6px 0px #c9c9c9;
+}
+
+@layer base {
+  html {
+    font-family: "Vazir", sans-serif;
+    direction: rtl;
+  }
+}
