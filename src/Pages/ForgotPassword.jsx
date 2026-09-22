@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ForgotPasswordSchema } from "../Validators/forgotPasswordSchema";
+import { ForgotPasswordSchema } from "../Validators/ForgotPasswordSchema";
 
 const ForgotPassword = () => {
   const navigate = useNavigate();
