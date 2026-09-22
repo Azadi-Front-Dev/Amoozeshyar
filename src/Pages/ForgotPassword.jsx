@@ -30,8 +30,8 @@ const ForgotPassword = () => {
     }, 2000);
   }, [isSubmitSuccessful, navigate]);
   return (
-    <div className="w-full h-full 2xl:h-screen flex-center bg-mygray-100 mobile:p-8">
-      <div className="flex flex-col items-center md:max-h-150 justify-center max-w-240 md:flex-row  bg-white mobile:border-2 mobile:border-mygray-100 mobile:shadow-myshadow-100 rounded-8  ">
+    <div className="w-full min-h-screen flex-center bg-mygray-100 mobile:p-8">
+      <div className="flex flex-col items-center  justify-center max-w-240 md:flex-row  bg-white mobile:border-2 mobile:border-mygray-100 mobile:shadow-myshadow-100 rounded-8  ">
         <div className="flex-col-center w-full max-w-100  rounded-8 py-5 px-6">
           <div className="flex-col-center w-full ">
             <img
