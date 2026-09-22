@@ -23,7 +23,7 @@ const Login = () => {
   };
 
   return (
-    <div className=" h-screen flex-center  mx-auto font-bold text-center mobile:p-8 mobile:bg-mygray-200 ">
+    <div className="flex-center mx-auto font-bold text-center mobile:p-8 mobile:bg-mygray-200 ">
       <div className="flex-col-center w-full max-w-100 bg-white mobile:border-2 mobile:border-mygray-100 mobile:shadow-myshadow-100 rounded-8 py-10 px-6">
         <div className="flex-col-center w-full">
           <img
