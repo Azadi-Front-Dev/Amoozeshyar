@@ -25,6 +25,19 @@ import SemesterDetails from "./Pages/Admin/SemesterDetails.jsx";
 import OfferingCourses from "./Pages/Admin/OfferingCourses.jsx";
 import RegistrationWindows from "./Pages/Admin/RegistrationWindows.jsx";
 
+// ---STD 
+import StudentLayout from "./Pages/Student/StudentLayout.jsx";
+import StudentEnrollment from "./Pages/Student/Enrollment.jsx";
+import Schedule from "./Pages/Student/Schedule.jsx";
+import Grades from "./Pages/Student/Grades.jsx";
+import Finance from "./Pages/Student/Finance.jsx";
+import Profile from "./Pages/Student/Profile.jsx";
+
+
+
+
+
+
 function PlaceholderPage({ title }) {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
@@ -129,10 +142,45 @@ const routes = [
     ],
   },
 
-  {
-    path: "/student/dashboard",
-    element: <StudentDashboard />,
-  },
+{
+  path: "/student",
+  element: <StudentLayout />,
+  children: [
+    {
+      index: true,
+      element: <Navigate to="dashboard" replace />,
+    },
+    {
+      path: "dashboard",
+      element: <StudentDashboard />,
+    },
+    {
+      path: "enrollment",
+      element: <StudentEnrollment />,
+    },
+    {
+      path: "schedule",
+      element: <Schedule />,
+    },
+    {
+      path: "grades",
+      element: <Grades />,
+    },
+    {
+      path: "finance",
+      element: <Finance />,
+    },
+    {
+      path: "profile",
+      element: <Profile />,
+    },
+  ],
+},
+
+// {
+//   path: "/professor/dashboard",
+//   element: <ProfessorDashboard />,
+// },
 
   {
     path: "/professor/dashboard",
