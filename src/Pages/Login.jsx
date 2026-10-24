@@ -14,6 +14,7 @@ const API_URL = "http://127.0.0.1:8000/api/accounts/login/";
 const ROLE_ROUTES = {
   ADMIN: "/admin/dashboard",
   STUDENT: "/student/dashboard",
+  // PROFESSOR: "/student/dashboard",
   PROFESSOR: "/professor/dashboard",
 };
 
